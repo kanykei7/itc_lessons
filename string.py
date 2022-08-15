@@ -171,50 +171,50 @@
 
 
 
-user={
-    'kanykey':{
-        'login':'kani00',
-        'password':"qwerty645635"
-    }
-}
-file=open('file.txt', 'w')
-log=str(input('вы уже авторизованы?\nyes/no\n>>'))
-if log=='yes':
-    login=input('введите логин\n>>')
-    if login in user['kanykey']['login']:
-        password=input('введите пароль\n>>')
-        if password in user['kanykey']['password']:
-            print('вы вошли в аккаунт')
-        else:
-            print('Пароль невепы\nПовторите снова')
-    else:
-        print('логин не совпадает')
-elif log=='no':
-    new_login=input('Придумайте логин <3\n>>')
-    if len(new_login)<4:
-        print('Логин должен состоять из 4 или более символов')
-        pass
-    else:
-        print('Отлично')
-        print('Придумайте пароль <3\nПароль должен состоять из букв и цифр')
-        password=input('password:\n>>')
-        repeat_password=input('repeat password:\n>>')
-        if password.isalpha() or password.isdigit():
-            print('Пароль должен состоять из букв и цифр')
-        elif len(password)<6:
-            print('Пароль должен состоять из 6 или более символов')
-        elif password!=repeat_password:
-            print('Пароль не совпадает!!!\nПовторите попытку')
-        else:
-            with open('file.txt', 'a+') as file:
-                file.write(new_login)
-                file.write(password)
-                user_list = []
+# user={
+#     'kanykey':{
+#         'login':'kani00',
+#         'password':"qwerty645635"
+#     }
+# }
+# file=open('file.txt', 'w')
+# log=str(input('вы уже авторизованы?\nyes/no\n>>'))
+# if log=='yes':
+#     login=input('введите логин\n>>')
+#     if login in user['kanykey']['login']:
+#         password=input('введите пароль\n>>')
+#         if password in user['kanykey']['password']:
+#             print('вы вошли в аккаунт')
+#         else:
+#             print('Пароль невепы\nПовторите снова')
+#     else:
+#         print('логин не совпадает')
+# elif log=='no':
+#     new_login=input('Придумайте логин <3\n>>')
+#     if len(new_login)<4:
+#         print('Логин должен состоять из 4 или более символов')
+#         pass
+#     else:
+#         print('Отлично')
+#         print('Придумайте пароль <3\nПароль должен состоять из букв и цифр')
+#         password=input('password:\n>>')
+#         repeat_password=input('repeat password:\n>>')
+#         if password.isalpha() or password.isdigit():
+#             print('Пароль должен состоять из букв и цифр')
+#         elif len(password)<6:
+#             print('Пароль должен состоять из 6 или более символов')
+#         elif password!=repeat_password:
+#             print('Пароль не совпадает!!!\nПовторите попытку')
+#         else:
+#             with open('file.txt', 'a+') as file:
+#                 file.write(new_login)
+#                 file.write(password)
+#                 user_list = []
 
-            with open('file.txt', 'a+') as file:
-                for line in file:
-                    user_list.append()
-            print(f'Пароль сохранен <3\nВаш логин:{new_login}\nВаш пароль:{password}')
+#             with open('file.txt', 'a+') as file:
+#                 for line in file:
+#                     user_list.append()
+#             print(f'Пароль сохранен <3\nВаш логин:{new_login}\nВаш пароль:{password}')
 
 
 
@@ -229,3 +229,5 @@ elif log=='no':
 #         user_data_list.append(line)
 
 # user_data = user_data_list['x']
+
+

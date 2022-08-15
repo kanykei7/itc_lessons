@@ -25,8 +25,8 @@
 # print(a)
 
 
-# a=('kanika', 'eliza', 'azamat', 'iilon','kanika', 'eliza', 'azamat', 'iilon')
-# print(a[:len(a)//2])
+a=('kanika', 'eliza', 'azamat', 'iilon','sjdfh','sjkdhfkjs','yigef','kanika', 'eliza', 'azamat', 'iilon')
+print(a[:len(a)//2])
 
 # a=[]
 # l=('kani','eliza')
